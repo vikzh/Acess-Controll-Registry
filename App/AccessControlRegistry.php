@@ -9,12 +9,8 @@ class AccessControlRegistry implements AccessControlRegistryInterface
     private $requestedClass;
     private $requestedMethod;
 
-    // example of filling
     const ACCESS_RESTRICTIONS = [
-        'SomeClass' => [
-            'someMethod1' => [USER::VISITOR],
-            'someMethod2' => [USER::ADMIN]
-        ]
+
     ];
 
     public function setRequests($accessRequest)
